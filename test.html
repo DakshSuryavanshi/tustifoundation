@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KindaCode.com</title>
+
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            height: 1000vh;
+            transition: background 1s ease;
+        }
+
+        .content {
+            padding: 50px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Welcome to KindaCode.com</h1>
+    </div>
+
+    <script>
+        var body = document.getElementsByTagName('body')[0];
+        body.style.backgroundColor = '#d0d0d0';
+
+        // trigger this function every time the user scrolls
+        window.onscroll = function (event) {
+            var scroll = window.pageYOffset;
+            if (scroll < 300) {
+                // green
+                body.style.backgroundColor = '#d0d0d0';
+            } else {
+                // purple
+                body.style.backgroundColor = '#f8e9af';
+            }
+        }
+    </script>
+</body>
+
+</html>

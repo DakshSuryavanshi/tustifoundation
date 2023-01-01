@@ -1,0 +1,134 @@
+body {
+
+    background-color: #ffe682;
+    color: aliceblue;
+    transition: background 0.5s ease;
+    scroll-behavior: smooth;
+
+}
+
+
+.navbar {
+    background-color: #f6eac4;
+
+}
+.tusti{
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+
+.tusti span{
+    color: #707070;
+    font-size: 7vw;
+    font-family: sans-serif;
+    width: 100%;
+    opacity: 0.7;
+    font-weight: 900;
+}
+
+.tusti span:not(:first-child){
+    margin-left: -0.10em;
+}
+
+.tusti:hover{
+
+    color: #525151;
+}
+
+.movit{
+
+    
+}
+
+.img-slider {
+
+    position: relative;
+    margin-top: 2em;
+    z-index: +10;
+    scroll-behavior: smooth;
+    
+}
+
+.imag {
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    opacity: 0.7;
+    z-index: +10;
+    border: transparent;
+}
+
+.panel {
+    /* min height incase content is higher than window height */
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    z-index: +10;
+    scroll-behavior: smooth;
+    /* outline: 10px solid hotpink; */
+    /* turn above on to see the edge of panels */
+  }
+
+  
+  .donate{
+
+    border: 1px solid #707070;
+    padding: 20px 50px;
+    border-radius: 10px;
+  }
+
+  .mainbox{
+    border: 1px solid #707070;
+    padding: 20px 50px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+.txt{
+
+    color: #707070;
+
+}
+
+.sbmt{
+    background-color:#f8cf6d ;
+    border-radius: 10px;
+    border: 3px;
+    padding: 5px;
+    border-color: transparent;
+    
+    
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.merge{
+    width: 100%;
+    text-align: center;
+
+
+}
+
+.merge span{
+
+        font-size: 20vw;
+        color: #707070;
+        opacity: 0.08;
+}
+
+.merge span:not(:first-child){
+    margin-left: -0.21em;
+    
+}
+
+
+
