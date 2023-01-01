@@ -10,6 +10,7 @@ body {
 
 .navbar {
     background-color: #f6eac4;
+    --bs-navbar-brand-margin-end: 0rem;
 
 }
 .tusti{
@@ -131,4 +132,11 @@ body {
 }
 
 
+#logo {
+    margin: 6px 13px;
+}
 
+#logo img {
+    height: 79px;
+    margin: -62px -18px;
+}
