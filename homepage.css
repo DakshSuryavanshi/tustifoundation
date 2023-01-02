@@ -99,10 +99,10 @@ body {
     border-radius: 10px;
     border: 3px;
     padding: 5px;
+    --bs-link-hover-color: #707070;
     border-color: transparent;
+    text-decoration: none;
     
-    
-
 }
 
 * {
