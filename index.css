@@ -6,10 +6,31 @@ body {
     scroll-behavior: smooth;
     height:100%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 
 
 }
+/* Featurettes
+------------------------- */
 
+.featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  /* rtl:begin:remove */
+  .featurette-heading {
+    letter-spacing: -.05rem;
+  }
+
+.paraabout{
+    color: #000814;
+    font-weight: 900;
+}
+
+.downbtn{
+    margin-left: 1080px;
+}
 
 .navbar {
     background-color: #f6eac4;
