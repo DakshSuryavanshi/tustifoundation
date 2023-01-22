@@ -34,14 +34,35 @@ position: relative
   font-weight: 900;
 }
 
+.txtheadabout{
+  color: #000814;
+}
+
+.txtabout{
+  font-weight: 600;
+}
+
 .downbtn{
   margin-left: 1080px;
+}
+
+.imgrnd{
+  border-radius: 5%;
 }
 
 .navbar {
   background-color: #f6eac400;
 
 }
+
+.navtext{
+  font-weight: 600;
+}
+
+.txtlead{
+  color: #000814;
+}
+
 .tusti{
   text-decoration: none;
   width: 100%;
