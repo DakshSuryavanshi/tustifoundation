@@ -50,6 +50,15 @@
       overflow-y: hidden;
     }
 
+    #logo {
+      margin: 6px 13px;
+    }
+
+    #logo img {
+      height: 79px;
+      margin: -62px -18px;
+    }
+
     .nav-scroller .nav {
       display: flex;
       flex-wrap: nowrap;
@@ -62,13 +71,49 @@
     }
   </style>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
 
 </head>
 
 <body>
+  <div class="row-6">
+    <header>
+      <nav class="navbar navbar-expand-md navbar">
+        <div class="container-fluid">
+          <div id="logo">
+            <img src="logo.png" alt="TUSTI">
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link navtext" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item navtext">
+                <a class="nav-link" href="/index.html">AboutUs</a>
+              </li>
+              <li class="nav-item navtext">
+                <a class="nav-link" href="/index.html">Contact</a>
+              </li>
+              <li class="nav-item navtext">
+                <a class="nav-link active" href="html_pages/gallery.html">Gallery</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+              <button class="btn btn-warning" type="submit" onclick="window.location.href='#donate';">Donate
+                Now</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
 
   <!-- <header>
     <div class="collapse bg-dark" id="navbarHeader">
@@ -116,7 +161,8 @@ integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+f
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
           <h1 class="fw-bold">GALLERY</h1>
-          <p class="lead text-muted">"Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever... it remembers little things, long after you have forgotten everything."</p>
+          <p class="lead text-muted">"Photography is a way of feeling, of touching, of loving. What you have caught on
+            film is captured forever... it remembers little things, long after you have forgotten everything."</p>
           <p>
             <!-- <a href="#" class="btn btn-primary my-2">Main call to action</a> -->
             <!-- <a href="#" class="btn btn-secondary my-2">Secondary action</a> -->
