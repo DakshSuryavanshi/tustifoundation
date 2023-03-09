@@ -1,321 +1,502 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TUSTI</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
-
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TustiFoundation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
-
-    <div class="col">
-        <div class="row-6">
-            <header>
-                <nav class="navbar navbar-expand-md navbar">
-                    <div class="container-fluid">
-                        <div id="logo">
-                            <img src="img/TUSTI.png" alt="TUSTI">
-                        </div>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarCollapse">
-                            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active navtext" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item navtext">
-                                    <a class="nav-link" href="#about">AboutUs</a>
-                                </li>
-                                <li class="nav-item navtext">
-                                    <a class="nav-link" href="#contact">Contact</a>
-                                </li>
-                                <li class="nav-item navtext">
-                                    <a class="nav-link" href="gallery.html">Gallery</a>
-                                </li>
-                            </ul>
-                            <form class="d-flex" role="search">
-                                <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-                                <button class="btn btn-warning" type="submit" onclick = "window.location.href='#donate';">Donate Now</button>
-                            </form>
-                        </div>
-                    </div>
-                </nav>
-            </header>
-        </div>
-
-        <div class="row movit" id="home">
-
-            <a class="tusti" href="#">
-                <span>T</span>
-                <span>U</span>
-                <span>S</span>
-                <span>T</span>
-                <span>I</span>
-            </a>
-
-        </div>
-
-        <div class="row-6">
-
-            <div id="carouselExampleControls" class="carousel slide img-slider" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/c1.jpeg" class="d-block w-100 imag" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/c2.jpeg" class="d-block w-100 imag" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/c3.jpeg" class="d-block w-100 imag" alt="...">
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="index.html">
+        <img class="logoimg" src="img/TUSTI.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-align-right text-dark"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mr-auto"></div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="about.html">HOME</a>
+            </li>
+            <li class="nav-item dropdown">
+                <div class="dropdown">
+                    <a href="event.html" class="nav-link">ABOUT US</a>
+                    <div class="dropdown-content">
+                        <a href="#">OUR AIM</a>
+                        <a href="#">OUR TEAM MEMBERS</a>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-        </div>
-
-        <div class="panel" id="donate">
-            <div class="form mainbox">
-                <form class="donation" method="post" action="...">
-                    <h3 class="txt">
-                        HELP US TRANSFORM
-
-                        <br>
-                        SOMEONE'S LIFE
-
-                    </h3>
-
-                    <div class="mb-3 ">
-                        <label for="exampleFormControlInput1 txt" class="form-label txt">Email address</label>
-                        <input type="email" class="form-control txt" id="exampleFormControlInput1"
-                            placeholder="name@example.com">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label txt">Example textarea</label>
-                        <textarea class="form-control txt" id="exampleFormControlTextarea1" rows="3"></textarea>
-
-                        <div class="col">
-                            <a href="donation.html" class="btn btn-primary my-2">Donate Now</a>
-                        </div>
-                    </div>
-
-
-                </form>
-
-            </div>
-        </div>
-
-
-        <div class="panel container" id="about">
-
-
-            <div>
-                <!-- the about us code will come here -->
-                <!-- START THE FEATURETTES -->
-
-                <hr class="featurette-divider">
-
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading fw-normal lh-1 txtheadabout">Our <span
-                                class="text-muted txtabout">AIM</span></h2>
-                        <p class="lead txtlead">Welcome to our NGO, where our mission is to achieve zero poverty and zero hunger for all people. We believe that every individual deserves the basic human rights of food and shelter, and it is our goal to work towards a world where these rights are met for all.</p>
-                    </div>
-                    <div class="col-md-5">
-                        <img class="imgrnd" src="https://source.unsplash.com/350x350/?nature,save" alt="">
+            </li>
+            <li class="nav-item dropdown">
+                <div class="dropdown">
+                    <a href="#" class="nav-link">PROJECTS</a>
+                    <div class="dropdown-content">
+                        <a href="leaderboard.html">PAST PROJECTS</a>
+                        <a href="practiceset.html">ONGOING PROJECTS</a>
+                        <!-- <a href="#">PARTICIPANTS</a> -->
+                        <!-- <a href="#">WINNERS</a> -->
                     </div>
                 </div>
-
-                <hr class="featurette-divider">
-
-                <div class="row featurette">
-                    <div class="col-md-7 order-md-2">
-                        <h2 class="featurette-heading fw-normal lh-1 txtheadabout">Our <span
-                                class="text-muted txtabout">TEAM</span></h2>
-                        <p class="lead txtlead">Our organization is made up of a dedicated team of volunteers and staff who work tirelessly to provide support and resources to those in need. Whether it's through food assistance programs, job training and education, or community development initiatives, we strive to empower individuals and communities to lift themselves out of poverty and hunger. </p>
-                    </div>
-                    <div class="col-md-5 order-md-1">
-                        <img class="imgrnd" src="https://source.unsplash.com/350x350/?people,team" alt="">
-                    </div>
-                </div>
-
-                <hr class="featurette-divider">
-
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h2 class="featurette-heading fw-normal lh-1 txtheadabout">How we <span
-                                class="text-muted txtabout">WORK</span></h2>
-                        <p class="lead txtlead">We partner with other organizations, governments and local communities to address the root causes of poverty and hunger, and to implement sustainable solutions. We also advocate for policies and systems that promote economic and social justice for all.</p>
-                    </div>
-                    <div class="col-md-5">
-                        <img class="imgrnd" src="https://source.unsplash.com/350x350/?office" alt="">
-                    </div>
-                </div>
-
-                <hr class="featurette-divider">
-
-                <!-- /END THE FEATURETTES -->
-
-            </div>
-
-
-        </div>
-
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gallery.html">GALLERY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT US</a>
+            </li>
+            <li>
+                <button class="btn btn-primary px-5 py-2 primary-btn" id="login-btn">DONATE NOW</button>
+            </li>
+        </ul>
     </div>
+</nav>
 
-    <div class="panel container" id="contact">
+<body id="body">
 
+    <div class="row movit" id="home">
 
-
-
-
-
-
-        <div class="merge text-center footer">
-
-            <a href="Contact"></a>
-            <!-- <span>C</span>
-            <span>O</span>
-            <span>N</span>
+        <a class="tusti" href="#">
             <span>T</span>
-            <span>A</span>
-            <span>C</span>
-            <span>T</span> -->
-
-            <div class="footer-basic">
-                <footer>
-                    <div class="social">
-
-                        <a href="https://www.instagram.com/">
-
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-instagram" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                            </svg>
-
-
-                        </a>
-
-                        <a href="https://www.facebook.com/">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-facebook" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                            </svg>
-
-                        </a>
-
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-envelope" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-                            </svg>
-
-                        </a>
-
-
-
-                        <a href="https://in.linkedin.com/"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                            </svg>
-                        </a>
-
-
-                    </div>
-
-
-
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#home">Home</a></li>
-                        <li class="list-inline-item"><a href="#">Services</a></li>
-                        <li class="list-inline-item "><a href="#about">About</a></li>
-                        <li class="list-inline-item"><a href="#">Terms</a></li>
-                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-
-                    </ul>
-                    <p class="copyright">TUSTI</p>
-                </footer>
-            </div>
-
-
-
-
-        </div>
-
-
+            <span>U</span>
+            <span>S</span>
+            <span>T</span>
+            <span>I</span>
+        </a>
 
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-
-
-
-    <script>
-
-        var body = document.getElementsByTagName('body')[0];
-        body.style.backgroundColor = '#ffb846';
-
-        // trigger this function every time the user scrolls
-        window.onscroll = function (event) {
-            var scroll = window.pageYOffset;
-            if (scroll < 300) {
-
-                body.style.backgroundColor = '#ffb846';
-            } else if (scroll >= 300 && scroll < 600) {
-
-                body.style.backgroundColor = '#ffd87d';
-            }
-
-            else if (scroll >= 1200 && scroll < 1800) {
-
-                body.style.backgroundColor = '#fbc445';
-            }
-
-            else if (scroll >= 1900 && scroll < 3000) {
-
-                body.style.backgroundColor = '#ffe682';
-            }
-
-        }
-    </script>
+    
+    
+    <section class="section-0">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active img-fluid">
+                <img class="d-block w-100 imag" src="img/c11.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 imag" src="img/c22.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 imag" src="img/c3.jpeg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </section>
+    <section class="sponsors">
+        <div class="content text-center">
+            <h2 text-align="center">SPONSORS AND ASSOCIATES</h2>
+        </div>
+        <div class="images">
+            <div class="img1">
+                <img class="simg" src="img/MOLogo.png" alt="ssim">
+            </div>
+            <div class="img2">
+                <img class="simg" src="img/MOLogo.png" alt="agritech">
+            </div>
+            <div class="img3">
+                <img class="simg" src="img/MOLogo.png" alt="Skyfield-Agritech">
+            </div>
+            <div class="img4">
+                <img class="simg" src="img/MOLogo.png" alt="Mangosorange">
+            </div>
+        </div>
+    </section>
+    
+    <section class="section-2  p-0">
+        <div class="cover">
+            <div class="content text-center">
+                <h1>Some Features That Made Us Unique</h1>
+                <p class="text-secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, eum?
+                </p>
+            </div>
+        </div>
+        <section class="articles">
+            <article>
+                <div class="article-wrapper">
+                    <figure>
+                        <img width="368" height="368" src="img/1.png" alt="" />
+                    </figure>
+                    <div class="article-body">
+                        <h2>Events</h2>
+                        <p>
+                            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet,
+                            congue
+                            bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet
+                            egestas.
+                        </p>
+                        <a href="#" class="read-more">
+                            Read more <span class="sr-only">about this is some title</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="article-wrapper">
+                    <figure>
+                        <img width="368" height="368" src="img/2.png" alt="" />
+                    </figure>
+                    <div class="article-body">
+                        <h2>Donations</h2>
+                        <p>
+                            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet,
+                            congue
+                            bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet
+                            egestas.
+                        </p>
+                        <a href="#" class="read-more">
+                            Read more <span class="sr-only">about this is some title</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="article-wrapper">
+                    <figure>
+                        <img width="368" height="207" src="img\feature\avg.jpg" alt="" />
+                    </figure>
+                    <div class="article-body">
+                        <h2>Programs</h2>
+                        <p>
+                            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet,
+                            congue
+                            bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet
+                            egestas.
+                        </p>
+                        <a href="#" class="read-more">
+                            Read more <span class="sr-only">about this is some title</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- <div class="purchase text-center">
+            <h1>Courses, Practice Sets, Quizzes</h1>
+            <p class="text-secondary">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+        <section class="articles">
+            <article>
+                <div class="article-wrapper">
+                    <figure>
+                        <img width="368" height="207" src="img\feature\datastructure.jpg" alt="" />
+                    </figure>
+                    <div class="article-body">
+                        <h2>Data structure and algorithm</h2>
+                        <p>
+                            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet,
+                            congue
+                            bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet
+                            egestas.
+                        </p>
+                        <a href="#" class="read-more">
+                            Know more <span class="sr-only">about this is some title</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="article-wrapper">
+                    <figure>
+                        <img width="368" height="207" src="img\feature\webprogramming.jpg" alt="" />
+                    </figure>
+                    <div class="article-body">
+                        <h2>web programming</h2>
+                        <p>
+                            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet,
+                            congue
+                            bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet
+                            egestas.
+                        </p>
+                        <a href="#" class="read-more">
+                            Know more <span class="sr-only">about this is some title</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="article-wrapper">
+                    <figure>
+                        <img width="368" height="207" src="img\feature\datascience.jpg" alt="" />
+                    </figure>
+                    <div class="article-body">
+                        <h2>data science</h2>
+                        <p>
+                            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet,
+                            congue
+                            bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet
+                            egestas.
+                        </p>
+                        <a href="#" class="read-more">
+                            know more <span class="sr-only">about this is some title</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section> -->
+    </section>
+    <section class="section-4">
+        <div class="container text-center">
+            <h1 class="text-dark">Collaborate With Tusti Foundation</h1>
+            <p class="text-secondary">Some of our collaborations with top organization</p>
+        </div>
+        <div class="team row ">
+            <div class="col-md-4 col-12 text-center">
+                <div class="card mr-2 d-inline-block shadow-lg">
+                    <div class="card-img-top">
+                        <img src="img/collaborator1.png" class="img-fluid border-radius p-4" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">XYZ</h3>
+                        <p class="card-text-index">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure autem recusandae,
+                            veniam, illo dolor soluta assumenda
+                        </p>
+                        <a href="#" class="text-secondary text-decoration-none">zzzz</a>
+                        <p class="text-black-50">19/01/2023</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                            <div class="card mr-2 d-inline-block shadow">
+                                <div class="card-img-top">
+                                    <img src="" class="img-fluid rounded-circle w-50 p-4" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">ABC College</h3>
+                                    <p class="card-text-index">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure autem
+                                        recusandae, veniam, illo dolor soluta assumenda
+                                    </p>
+                                    <a href="#" class="text-secondary text-decoration-none">XYZ Event</a>
+                                    <p class="text-black-50">13/12/2022</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card  d-inline-block mr-2 shadow">
+                                <div class="card-img-top">
+                                    <img src="img/collaborator1.png" class="img-fluid rounded-circle w-50 p-4" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">XYZ college</h3>
+                                    <p class="card-text-index">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure autem
+                                        recusandae, veniam, illo dolor soluta assumenda
+                                    </p>
+                                    <a href="#" class="text-secondary text-decoration-none">zzzz</a>
+                                    <p class="text-black-50">18/11/2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 text-center">
+                <div class="card mr-2 d-inline-block shadow-lg">
+                    <div class="card-img-top">
+                        <img src="img/WIT-LOGO-1-1.png" class="img-fluid border-radius p-4" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">pqr</h3>
+                        <p class="card-text-index">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure autem recusandae,
+                            veniam, illo dolor soluta assumenda
+                        </p>
+                        <a href="#" class="text-secondary text-decoration-none">zzzz</a>
+                        <p class="text-black-50">11/10/2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
 </body>
+
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content pt-5 pb-4">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 footer-about">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="img/TUSTI.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, suscipit?</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="https://www.facebook.com/tustifoundation"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="https://www.instagram.com/tusti_foundation/"><i class="fab fa-instagram instagram-bg"></i></a>
+                                <!-- <a href="https://twitter.com/GoHackathon"><i class="fab fa-twitter twitter-bg"></i></a> -->
+                                <a href="https://www.linkedin.com/company/tusti-foundation-family/about/"><i class="fab fa-linkedin-in linkedin-bg"></i></a>
+                                <a href="https://www.youtube.com/channel/UCKdKfdwJVe3UJKp9WG1H0yQ"><i class="fab fa-youtube youtube-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 ">
+                        <div class="footer-widget-links">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Quick Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">about</a></li>
+                                    <li><a href="event.html">projects</a></li>
+                                    <li><a href="gallery2.html">gallery</a></li>
+                                    <li><a href="contact.html">Contact us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 ">
+                        <div class="footer-widget-phone">
+                            <div class="footer-widget">
+                                <div class="address details">
+                                  <div class="footer-widget-heading">
+                                    <h3>Contact Us</h3>
+                                  </div>
+                                    <div class="topic">
+                                            <i class="fa fa-map-marker"></i>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<strong>#09,Greater Appu Enclave, Modipuram, Meerut,U.P.India
+                                            Pin-250110
+                                            </strong>
+                                    </div>
+                                </div> <br>
+                                <div class="phone-details">
+                                    <div class="topic"> 
+                                        <!-- <i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phone -->
+                                        <!-- <i class="fa fa-phone" style="font-size:20px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="tel:+91 9910018925">+91 9910018925</a></strong> <br> -->
+                                        <i class="fa fa-phone" style="font-size:20px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="tel:+91 7678476713">+91 7417698965</a></strong> <br>
+                                        <!-- <i class="fa fa-phone" style="font-size:20px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><a href="tel:+91-120-4567841">+91-120-4567841</a></strong> -->
+                                    </div>
+                                </div> <br>
+                                <div class="email-details">
+                                    <div class="topic">
+                                        <i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="mailto:tustifoundation2k23@gmail.com">tustifoundation2k23</a></strong>
+                                        <!-- <i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="mailto:gohackathon2k22@gmail.com">gohackathon2k22@gmail.com</a></strong> -->
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 ">
+                        <div class="footer-widget-subscribe">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Subscribe</h3>
+                                </div>
+                                <div class="footer-text mb-25">
+                                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                </div>
+                                <div class="subscribe-form">
+                                    <form action="#">
+                                        <input type="text" placeholder="Email Address">
+                                        <button type="submit" class="btn btn-primary">Send</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright © 2023 | <a href="https://gohackathon.in/">TUSTIFOUNDATION</a> | All Right
+                                Reserved.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Terms and Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 
 </html>
