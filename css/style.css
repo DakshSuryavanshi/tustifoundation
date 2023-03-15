@@ -858,6 +858,7 @@ body{
     
     .articles {
       display: grid;
+      padding-bottom: 57px;
       max-width: 1200px;
       margin-inline: auto;
       padding-inline: 24px;
@@ -951,4 +952,8 @@ body{
         text-decoration: none;
       }
     
+      html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
       
